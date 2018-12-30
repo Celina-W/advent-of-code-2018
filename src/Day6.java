@@ -1,4 +1,7 @@
 public class Day6 {
+	
+	final static int MAX_GRID_SIZE = 500;
+	final static int SAFE_DISTANCE = 10000;
 
 	public static void main(String[] args) {
 		
@@ -111,7 +114,6 @@ public class Day6 {
 		 * -> 0 -> identifier of closest point
 		 * -> 1 -> distance from closest point
 		 */
-		final int MAX_GRID_SIZE = 500;
 		int[][][] grid = new int[MAX_GRID_SIZE][MAX_GRID_SIZE][2];
 		
 		// reset all distances
@@ -194,9 +196,6 @@ public class Day6 {
 	}
 	
 	public static int getSafeRegion(int[][] coordinates) {
-		
-		final int MAX_GRID_SIZE = 500;
-		final int SAFE_DISTANCE = 10000;
 		
 		int region = 0;
 		
